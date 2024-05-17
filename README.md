@@ -116,11 +116,11 @@ This is the actual *worker* that performs the inference on the GPU.  Each worker
 Note that the 8B model supports single-card inference, but the 70B model requires 8-card inference.
 
 ```Shell
-CUDA_VISIBLE_DEVICES=0 python -m qh360_vl.serve.model_worker --host 0.0.0.0 --controller http://localhost:10000 --port 40000 --worker http://localhost:40000 --model-path /hbox2dir/qh360_vl-8B
+CUDA_VISIBLE_DEVICES=0 python -m qh360_vl.serve.model_worker --host 0.0.0.0 --controller http://localhost:10000 --port 40000 --worker http://localhost:40000 --model-path qihoo360/360VL-8B
 ```
 
 ```Shell
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m qh360_vl.serve.model_worker --host 0.0.0.0 --controller http://localhost:10000 --port 40000 --worker http://localhost:40000 --model-path /hbox2dir/qh360_vl-70B
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m qh360_vl.serve.model_worker --host 0.0.0.0 --controller http://localhost:10000 --port 40000 --worker http://localhost:40000 --model-path qihoo360/360VL-70B
 ```
 
 ### CLI Inference
@@ -129,7 +129,7 @@ Chat about images using 360VL without the need of Gradio interface.
 
 ```Shell
 INIT_MODEL_PATH="/hbox2dir"
-name="qh360_vl-8B"
+name="360VL-8B"
 python -m qh360_vl.eval.infer \
     --model-path $INIT_MODEL_PATH/$name \
 ```
