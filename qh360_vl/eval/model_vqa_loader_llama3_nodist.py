@@ -60,6 +60,7 @@ class CustomDataset(Dataset):
         )
 
         input_id_list = input_ids[0].tolist()
+        input_id_list[input_id_list.index(128049)]=-200
         input_ids = torch.tensor(input_id_list, dtype=input_ids.dtype,device=input_ids.device)
         image = Image.open(os.path.join(self.image_folder, image_file)).convert('RGB')
         if self.args.slide_window:
