@@ -93,7 +93,7 @@ class HoneybeeVisualProjectorConfig(PretrainedConfig):
         config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
 
         # get the visual_projector config dict if we are loading from HoneybeeConfig
-        if config_dict.get("model_type") == "mllm":
+        if config_dict.get("model_type") == "QH_360VL":
             config_dict = config_dict["visual_projector_config"]
 
         if (
