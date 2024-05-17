@@ -4,7 +4,7 @@
   <img src="./qh360_vl/360vl.PNG" width=80%/>
 </p>
 
-**360VL** is developed based on the LLama3 language model and is also the industry's first open source multi-modal large model based on **LLama3-70B**[[🤗Meta-Llama-3-70B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct)]. In addition to applying the Llama3 language model, the 360VL model also designs a globally aware multi-branch projector architecture, which enables the model to have more sufficient image understanding capabilities.
+**360VL** is developed based on the LLama3 language model and is also the industry's first open source large multi-modal model based on **LLama3-70B**[[🤗Meta-Llama-3-70B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct)]. In addition to applying the Llama3 language model, the 360VL model also designs a globally aware multi-branch projector architecture, which enables the model to have more sufficient image understanding capabilities.
 
 
 ## Contents
@@ -146,16 +146,16 @@ python -m qh360_vl.eval.infer \
 We refer to the evaluation data organization method of LLava-1.5, which can be found in the following documents.  [Evaluation.md](docs/Evaluation.md)
 
 ```Shell
-bash scripts.eval.mme.sh
-bash scripts.eval.mmb_cn.sh
-bash scripts.eval.mmb_en.sh
-bash scripts.eval.refcoco.sh
+bash scripts/eval/mme.sh
+bash scripts/eval/mmb_cn.sh
+bash scripts/eval/mmb_en.sh
+bash scripts/eval/refcoco.sh
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./scripts/eval/gqa.sh
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./scripts/eval/vqav2.sh
-bash scripts.eval.llavabench.sh
-bash scripts.eval.mmmu.sh
-bash scripts.eval.pope.sh
-bash scripts.eval.textvqa.sh
+bash scripts/eval/llavabench.sh
+bash scripts/eval/mmmu.sh
+bash scripts/eval/pope.sh
+bash scripts/eval/textvqa.sh
 ```
 
 <!-- ## Acknowledgement -->
