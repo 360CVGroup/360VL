@@ -42,7 +42,7 @@ def load_pretrained_model(model_path, model_base, model_name, load_bf16=False, l
         kwargs['torch_dtype'] = torch.float16
 
 
-    if 'qh360_vl' in model_name.lower():
+    if '360vl' in model_name.lower():
         # Load qh_360vl model
         if 'lora' in model_name.lower() and model_base is None:
             warnings.warn('There is `lora` in model name but no `model_base` is provided. If you are loading a LoRA model, please provide the `model_base` argument. Detailed instruction: https://github.com/haotian-liu/qh_360vl#launch-a-model-worker-lora-weights-unmerged.')
@@ -128,7 +128,7 @@ def load_pretrained_model(model_path, model_base, model_name, load_bf16=False, l
 
     image_processor = None
     
-    if 'qh360_vl' in model_name.lower():
+    if '360vl' in model_name.lower():
         mm_use_im_start_end = getattr(model.config, "mm_use_im_start_end", False)
         mm_use_im_patch_token = getattr(model.config, "mm_use_im_patch_token", True)
         if mm_use_im_patch_token:
