@@ -53,7 +53,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 from PIL import Image
 
-checkpoint = "qh360_vl-70B"
+checkpoint = "qihoo360/360VL-70B"
 
 model = AutoModelForCausalLM.from_pretrained(checkpoint, torch_dtype=torch.float16, device_map='cuda', trust_remote_code=True).eval()
 tokenizer = AutoTokenizer.from_pretrained(checkpoint, trust_remote_code=True)
