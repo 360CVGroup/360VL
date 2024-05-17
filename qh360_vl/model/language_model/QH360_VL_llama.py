@@ -44,7 +44,7 @@ class QH360_VL_LlamaForCausalLM(LlamaForCausalLM, QH360_VL_MetaForCausalLM):
 
     def __init__(self, config):
         super(LlamaForCausalLM, self).__init__(config)
-        config._attn_implementation == "flash_attention_2"
+        config._attn_implementation = "flash_attention_2"
         self.model = QH360_VL_LlamaModel(config)
 
         self.lm_head = nn.Linear(config.hidden_size, config.vocab_size, bias=False)
