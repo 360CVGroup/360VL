@@ -55,7 +55,7 @@ from PIL import Image
 
 checkpoint = "qihoo360/360VL-70B"
 
-model = AutoModelForCausalLM.from_pretrained(checkpoint, torch_dtype=torch.float16, device_map='cuda', trust_remote_code=True).eval()
+model = AutoModelForCausalLM.from_pretrained(checkpoint, torch_dtype=torch.float16, device_map='auto', trust_remote_code=True).eval()
 tokenizer = AutoTokenizer.from_pretrained(checkpoint, trust_remote_code=True)
 vision_tower = model.get_vision_tower()
 vision_tower.load_model()
@@ -150,8 +150,8 @@ bash scripts/eval/mme.sh
 bash scripts/eval/mmb_cn.sh
 bash scripts/eval/mmb_en.sh
 bash scripts/eval/refcoco.sh
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./scripts/eval/gqa.sh
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./scripts/eval/vqav2.sh
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 bash ./scripts/eval/gqa.sh
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 bash ./scripts/eval/vqav2.sh
 bash scripts/eval/llavabench.sh
 bash scripts/eval/mmmu.sh
 bash scripts/eval/pope.sh
