@@ -2,7 +2,7 @@
 INIT_MODEL_PATH="/hbox2dir"
 CKPT="qh360_vl-8B"
 
-torchrun --nproc_per_node 8 -m qh360_vl.eval.model_vqa_loader_llama3 \
+torchrun --nproc_per_node 8 -m qh360_vl.eval.model_vqa_mme_llama3 \
     --model-path $INIT_MODEL_PATH/$CKPT \
     --question-file ./playground/data/eval/MME/llava_mme.jsonl \
     --image-folder ./playground/data/eval/MME/MME_Benchmark_release_version \
