@@ -37,13 +37,13 @@ bash deploy.sh
 | Monkey-Chat |  [🤗LINK](https://huggingface.co/echo840/Monkey-Chat) | 72.4| 71 | 67.5  | 65.8    |40.7| - | 1887.4|
 | MM1-7B-Chat |  [LINK](https://ar5iv.labs.arxiv.org/html/2403.09611) | -| 72.3 | -  | -    |37.0| 35.6 |  1858.2|
 | IDEFICS2-8B |  [🤗LINK](https://huggingface.co/HuggingFaceM4/idefics2-8b) | 75.7 | 75.3 | 68.6  | 67.3    |43.0| 37.7 |1847.6| 
-| Honeybee |  [LINK](https://github.com/kakaobrain/honeybee) | 74.3 | 74.3 | -  | -    |36.2|  -|1950| 
 | SVIT-v1.5-13B|  [🤗LINK](https://huggingface.co/Isaachhe/svit-v1.5-13b-full) | 69.1 | - | 63.1  |  -  | 38.0| 33.3|1889| 
-| LLaVA-v1.5-13B |  [🤗LINK](https://huggingface.co/liuhaotian/llava-v1.5-13b) | 69.2 | 69.2 | 65  | 63.6    |36.4| 33.6 | 1826.7| 
+| LLaVA-v1.5-13B |  [🤗LINK](https://huggingface.co/liuhaotian/llava-v1.5-13b) | 69.2 | 69.2 | 65  | 63.6    |36.4| 33.6 | 1826.7|  
 | LLaVA-v1.6-13B |  [🤗LINK](https://huggingface.co/liuhaotian/llava-v1.6-vicuna-13b) | 70 | 70.7 | 68.5  | 64.3    |36.2| - |1901|
+| Honeybee |  [LINK](https://github.com/kakaobrain/honeybee) | 73.6 | 74.3 | -  | -    |36.2|  -|1976.5|
 | YI-VL-34B |  [🤗LINK](https://huggingface.co/01-ai/Yi-VL-34B) | 72.4 | 71.1 |  70.7 |   71.4  |45.1| 41.6 |2050.2|
-| **360VL-8B** |  [🤗LINK](https://huggingface.co/qihoo360/360VL-8B) | 75.3 | 73.7 | 71.1   | 68.6    |39.7| 37.1 |  1899.1|
-| **360VL-70B** |  [🤗LINK](https://huggingface.co/qihoo360/360VL-70B) | 78.1 | 80.4 | 76.9   | 77.7    |50.8| 44.3 |  1983.2|
+| **360VL-8B** |  [🤗LINK](https://huggingface.co/qihoo360/360VL-8B) | 75.3 | 73.7 | 71.1   | 68.6    |39.7| 37.1 |  1944.6|
+| **360VL-70B** |  [🤗LINK](https://huggingface.co/qihoo360/360VL-70B) | 78.1 | 80.4 | 76.9   | 77.7    |50.8| 44.3 |  2012.3|
 
 
 ## Quick Start 🤗
